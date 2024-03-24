@@ -1,0 +1,57 @@
+<!-- 
+Name: Assignement2
+Course Code: SODV1201
+Class: Introduction to Web Programming
+Author: Glenn Perez
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 | Weather API</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Page Header -->
+    <header id="headerContainer">
+        <h1 id="title" class="coloredText1">Weather Information Using API</h1>
+    </header>
+    <!-- Weather Page Main Content -->
+    <main id="Container">
+        <div id="weatherTitleDiv">
+            <div id="locationDiv">
+                <input type="text" id="location" placeholder="Enter location to get weather details">
+                <button id="searchLocation">Search</button>
+            </div>
+            <div id="weatherResultsDiv">
+                <p class="weatherResults">Location: <span id="weatherLocation" class="coloredText3"></span></p>
+                <p class="weatherResults">Description: <span id="weatherDescription" class="coloredText3"></span></p>
+                <p class="weatherResults">Current Condition: <span id="weatherCondition" class="coloredText3"></span></p>
+                <p class="weatherResults">Temperature: <span id="weatherTemp" class="coloredText3"></span></p>
+                <p class="weatherResults">Humidity: <span id="weatherHumidity" class="coloredText3"></span></p>
+                <p class="weatherResults">Precipitation: <span id="weatherPrecip" class="coloredText3"></span></p>
+            </div>
+            <div id="weatherErrorDiv">
+                <p id="weatherResultsError">Cannot resolve address!</p>
+            </div>
+        </div>
+    </main>
+    <!-- Page Footer -->
+    <footer>
+        <div id="footerDiv" class="coloredText2">Submitted by:
+            <span class="coloredText1">Glenn Perez</span> | Date: <span id="date" class="coloredText1"></span> |
+            Copyright:
+            <span class="coloredText1">&copy 2024</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

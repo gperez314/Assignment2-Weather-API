@@ -1,0 +1,159 @@
+/*
+Name: Assignement2
+Course Code: SODV1201
+Class: Introduction to Web Programming
+Author: Glenn Perez
+*/
+
+/* ============================================================================================ */
+/* Colors and variables */
+/* ============================================================================================ */
+:root {
+    --backgrounColor: rgb(41, 41, 41);
+    --color1: rgb(255, 220, 18);
+    --color2: rgb(191, 191, 191);
+    --color3: white;
+}
+
+.coloredText1 {
+    color: var(--color1)
+}
+
+.coloredText2 {
+    color: var(--color2)
+}
+
+.coloredText3 {
+    color: var(--color3)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================================================================================ */
+/* Style for body */
+/* ============================================================================================ */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background-color: var(--backgrounColor);
+}
+
+/* ============================================================================================ */
+/* Special styling for smaller screens */
+/* ============================================================================================ */
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/* ============================================================================================ */
+/* Styles for Title*/
+/* ============================================================================================ */
+#headerContainer {
+    height: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ============================================================================================ */
+/* Styles for Footer */
+/* ============================================================================================ */
+#footerDiv {
+    display: block;
+    height: 30px;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ============================================================================================ */
+/* Styles for Weather Page */
+/* ============================================================================================ */
+#weatherTitleDiv {
+    justify-content: center;
+    padding: 30px 0;
+    text-align: center;
+    height: calc(100vh - 180px);
+}
+
+#locationDiv {
+    display: flex;
+    flex-wrap: wrap;;
+    justify-content: center;
+}
+
+#location {
+    margin: 10px 0;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 300px;
+}
+
+#location:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+#searchLocation {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    background: var(--color1);
+    border: 1px solid var(--color1);
+    height: 36px;
+    width: 100px;
+    margin: 10px 5px;
+    padding: 0 6px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+#searchLocation:hover {
+    background: #F7CA00;
+    border-color: #F2C200;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+
+.weatherResults {
+    padding: 5px;
+    font-size: 1.2em;
+    color: var(--color1);
+}
+
+#weatherResultsDiv {
+    width: min(450px, 80vw);
+    margin: auto;
+    padding-top: 20px;
+    text-align: left;
+    display: none;
+}
+
+#weatherErrorDiv {
+    display: none;
+}
+
+#weatherResultsError {
+    padding: 5px;
+    font-size: 1.5em;
+    color: red;
+}
